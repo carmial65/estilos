@@ -274,3 +274,64 @@ h3.post-title {
   text-decoration: underline;
 }
 
+/* ================= Resumen y extracto ================= */
+.post-excerpt {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+/* ================= Miniaturas ================= */
+.post-thumbnail {
+  margin: 16px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= Botón Leer más ================= */
+.read-more {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.read-more:hover {
+  color: #b3592f;
+  text-decoration: underline;
+}
+
+/* ================= Post card hover ================= */
+.post {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* ================= Tipografía ================= */
+.blog-title {
+  font-size: 32px;
+}
+.post-title {
+  font-size: 28px;
+}
+
+/* ================= Espaciados ================= */
+.main-wrapper {
+  gap: 40px;
+}
+.container {
+  padding: 0 24px;
+}
+
