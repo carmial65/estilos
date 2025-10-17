@@ -8,11 +8,14 @@
   --max-w: 1100px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -26,6 +29,7 @@ a {
   color: var(--accent);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -43,32 +47,32 @@ img {
 }
 
 
-/* 1. Reducir padding vertical de la cabecera sin tocar otros estilos */
+/* Site Header */
 .site-header {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(213,139,59,0.1);
 }
-
-/* 2. Ajustar alineación de logo y títulos */
-.header-content {
-  align-items: center !important; /* mantener alineación vertical centrada */
-}
-
-/* 3. Disminuir ligeramente el tamaño del logo */
 .logo-mark {
-  width: 42px !important;
-  height: 42px !important;
-  font-size: 20px !important;
+  background: var(--accent);
+  color: #fff;
+  width: 56px; height: 56px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
 }
-
-/* 4. Reducir márgenes del título y subtítulo */
 .blog-title {
-  margin-bottom: 4px !important;
-  font-size: 2rem !important;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin: 0 0 4px;
 }
 .blog-subtitle {
-  margin-top: 2px !important;
-  font-size: 0.9rem !important;
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  color: var(--muted);
 }
 
 /* Responsive */
@@ -77,12 +81,16 @@ img {
     flex-direction: column;
     gap: 6px;
   }
+
   .logo-mark {
-    width: 36px; height: 36px;
+    width: 36px;
+    height: 36px;
   }
+
   .blog-title {
     font-size: 1.6rem;
   }
+
   .blog-subtitle {
     font-size: 0.85rem;
   }
@@ -95,6 +103,7 @@ img {
   gap: 40px;
   padding: 40px 0;
 }
+
 @media (max-width: 768px) {
   .main-wrapper {
     grid-template-columns: 1fr;
@@ -107,22 +116,26 @@ img {
   border-radius: var(--radius);
   padding: 32px;
   margin-bottom: 32px;
-  box-shadow: 0 2px 8px rgba(213,139,59,0.05);
+  box-shadow: 0 2px 8px rgba(213, 139, 59, 0.05);
 }
+
 .post-title {
   font-family: "Playfair Display", serif;
   font-size: 28px;
   margin: 0 0 16px;
   color: var(--accent);
 }
+
 .post-thumbnail {
   margin-bottom: 20px;
 }
+
 .post-thumbnail img {
   border-radius: var(--radius);
-  box-shadow: 0 4px 24px rgba(213,139,59,0.1);
+  box-shadow: 0 4px 24px rgba(213, 139, 59, 0.1);
   transition: transform 0.2s;
 }
+
 .post-thumbnail img:hover {
   transform: scale(1.02);
 }
@@ -141,6 +154,7 @@ img {
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
 }
+
 .read-more:hover {
   background: var(--accent);
   color: #fff;
@@ -150,14 +164,16 @@ img {
 .post-footer {
   margin-top: 48px;
   padding-top: 24px;
-  border-top: 1px solid rgba(213,139,59,0.1);
+  border-top: 1px solid rgba(213, 139, 59, 0.1);
 }
+
 .post-comment-link {
   display: inline-block;
   margin-bottom: 24px;
   font-weight: 600;
   color: var(--accent);
 }
+
 .post-location {
   font-size: 0.95rem;
   color: var(--muted);
@@ -169,21 +185,24 @@ img {
   border-radius: var(--radius);
   padding: 24px;
   margin-bottom: 24px;
-  box-shadow: 0 2px 8px rgba(213,139,59,0.05);
+  box-shadow: 0 2px 8px rgba(213, 139, 59, 0.05);
 }
+
 .widget h3 {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   margin-bottom: 16px;
   color: var(--accent);
 }
+
 .search-input input {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgba(213,139,59,0.2);
+  border: 1px solid rgba(213, 139, 59, 0.2);
   border-radius: 8px;
   font-size: 14px;
 }
+
 .search-action {
   width: 100%;
   margin-top: 8px;
@@ -196,6 +215,7 @@ img {
   cursor: pointer;
   transition: opacity 0.2s;
 }
+
 .search-action:hover {
   opacity: 0.9;
 }
@@ -206,6 +226,7 @@ img {
   justify-content: space-between;
   margin: 40px 0;
 }
+
 .blog-pager a {
   padding: 12px 24px;
   background: var(--accent);
@@ -214,6 +235,7 @@ img {
   text-decoration: none;
   transition: opacity 0.2s;
 }
+
 .blog-pager a:hover {
   opacity: 0.9;
 }
@@ -283,14 +305,16 @@ img {
 .site-footer {
   background: var(--card);
   padding: 32px 0;
-  border-top: 1px solid rgba(213,139,59,0.1);
+  border-top: 1px solid rgba(213, 139, 59, 0.1);
   text-align: center;
 }
+
 .footer-note {
   font-family: "Caveat", cursive;
   font-size: 20px;
   color: var(--accent);
 }
+
 .site-footer p {
   color: var(--muted);
 }
