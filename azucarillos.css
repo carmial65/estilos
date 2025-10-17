@@ -319,3 +319,21 @@ h3.post-title a:hover {
   }
 }
 
+.read-more {
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.read-more:hover {
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+}
