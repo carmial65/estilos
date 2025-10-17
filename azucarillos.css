@@ -353,18 +353,16 @@ h3.post-title a:hover {
   color: white;
   text-decoration: none;
 }
-/* Mejorar espaciado en posts individuales */
-.post-footer {
-  margin-top: 40px !important;
-  padding-top: 32px !important;
-  border-top: 1px solid rgba(213, 139, 59, 0.1);
+
+/* Mostrar snippet */
+.post-body[data-view-isMultipleItems="true"] {
+  max-height: none;
+}
+.post-body[data-view-isSingleItem="true"] {
+  max-height: none;
 }
 
-.post-footer .byline {
-  margin-bottom: 24px;
-}
-
-/* Espaciado entre comentario y ubicación */
+/* Espaciado fijo tras comentarios */
 .post-footer {
   margin-top: 48px;
   padding-top: 24px;
@@ -381,15 +379,4 @@ h3.post-title a:hover {
   margin-top: 24px;
   font-size: 0.95rem;
   color: var(--muted);
-}
-
-/* Mejorar el enlace de comentarios */
-.post-comment-link {
-  display: inline-block;
-  margin: 24px 0;
-  padding: 8px 16px;
-  background: rgba(213, 139, 59, 0.1);
-  border-radius: 6px;
-  color: var(--accent);
-  text-decoration: none;
 }
