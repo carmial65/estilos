@@ -42,32 +42,52 @@ img {
   padding: 0 20px;
 }
 
-/* Site Header */
+
+/* Cabecera más compacta */
 .site-header {
-  padding: 40px 0;
+  padding: 12px 0;                /* reducir padding vertical */
   border-bottom: 1px solid rgba(213,139,59,0.1);
+  background: var(--paper);
 }
-.logo-mark {
-  background: var(--accent);
-  color: #fff;
-  width: 56px; height: 56px;
-  border-radius: var(--radius);
+
+.header-content {
   display: flex;
-  align-items: center;
+  align-items: center;           /* centrar verticalmente logo y texto */
+  gap: 12px;                      /* reducir separación horizontal */
   justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-  font-weight: 700;
 }
+
+/* Ajuste de logo */
+.logo-mark {
+  width: 40px; height: 40px;     /* reducir tamaño */
+  font-size: 18px;               /* texto interno más pequeño */
+}
+
+/* Ajuste de títulos */
 .blog-title {
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
-  margin: 0 0 4px;
+  font-size: 2rem;               /* ligeramente menor */
+  margin: 0;                     /* quitar margen inferior */
 }
 .blog-subtitle {
-  font-family: "Caveat", cursive;
-  font-size: 18px;
-  color: var(--muted);
+  font-size: 0.9rem;             /* subtítulo más sutil */
+  margin-top: 2px;               /* pequeño espacio */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+  }
+  .blog-title {
+    font-size: 1.6rem;
+  }
+  .blog-subtitle {
+    font-size: 0.85rem;
+  }
 }
 
 /* Layout */
