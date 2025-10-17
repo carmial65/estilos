@@ -353,3 +353,37 @@ h3.post-title a:hover {
   color: white;
   text-decoration: none;
 }
+/* Mejorar espaciado en posts individuales */
+.post-footer {
+  margin-top: 40px !important;
+  padding-top: 32px !important;
+  border-top: 1px solid rgba(213, 139, 59, 0.1);
+}
+
+.post-footer .byline {
+  margin-bottom: 24px;
+}
+
+/* Espaciado para comentarios */
+.comment-footer {
+  margin-top: 32px;
+  padding-top: 24px;
+}
+
+/* Espaciado para localización */
+.post-location {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px dotted var(--muted);
+}
+
+/* Mejorar el enlace de comentarios */
+.post-comment-link {
+  display: inline-block;
+  margin: 24px 0;
+  padding: 8px 16px;
+  background: rgba(213, 139, 59, 0.1);
+  border-radius: 6px;
+  color: var(--accent);
+  text-decoration: none;
+}
