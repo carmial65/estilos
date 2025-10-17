@@ -364,17 +364,23 @@ h3.post-title a:hover {
   margin-bottom: 24px;
 }
 
-/* Espaciado para comentarios */
-.comment-footer {
-  margin-top: 32px;
+/* Espaciado entre comentario y ubicación */
+.post-footer {
+  margin-top: 48px;
   padding-top: 24px;
+  border-top: 1px solid rgba(213, 139, 59, 0.1);
 }
-
-/* Espaciado para localización */
+.post-comment-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
 .post-location {
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px dotted var(--muted);
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 /* Mejorar el enlace de comentarios */
