@@ -43,34 +43,32 @@ img {
 }
 
 
-/* Cabecera más compacta */
+/* 1. Reducir padding vertical de la cabecera sin tocar otros estilos */
 .site-header {
-  padding: 12px 0;                /* reducir padding vertical */
-  border-bottom: 1px solid rgba(213,139,59,0.1);
-  background: var(--paper);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
+/* 2. Ajustar alineación de logo y títulos */
 .header-content {
-  display: flex;
-  align-items: center;           /* centrar verticalmente logo y texto */
-  gap: 12px;                      /* reducir separación horizontal */
-  justify-content: center;
+  align-items: center !important; /* mantener alineación vertical centrada */
 }
 
-/* Ajuste de logo */
+/* 3. Disminuir ligeramente el tamaño del logo */
 .logo-mark {
-  width: 40px; height: 40px;     /* reducir tamaño */
-  font-size: 18px;               /* texto interno más pequeño */
+  width: 42px !important;
+  height: 42px !important;
+  font-size: 20px !important;
 }
 
-/* Ajuste de títulos */
+/* 4. Reducir márgenes del título y subtítulo */
 .blog-title {
-  font-size: 2rem;               /* ligeramente menor */
-  margin: 0;                     /* quitar margen inferior */
+  margin-bottom: 4px !important;
+  font-size: 2rem !important;
 }
 .blog-subtitle {
-  font-size: 0.9rem;             /* subtítulo más sutil */
-  margin-top: 2px;               /* pequeño espacio */
+  margin-top: 2px !important;
+  font-size: 0.9rem !important;
 }
 
 /* Responsive */
